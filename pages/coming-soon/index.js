@@ -59,6 +59,9 @@ const useStyles = (maxWidth600) => makeStyles(theme => ({
     backgroundColor: '#ffffffab',
     '& > h1 > span': {
       color: '#8c5818'
+    },
+    '& img': {
+      width: '100%'
     }
   },
   phone: {
@@ -130,7 +133,7 @@ const ComingSoonPage = () => {
         </div>
         <div id="sign" className={classes.logo}><SignLogo/></div>
         <div className={classes.phone}>
-          <a href="tel:4357907846"><Phone /> <span>(435) 790-7846</span></a>
+          <a href="tel:4357906777"><Phone /> <span>(435) 790-6777</span></a>
         </div>
       </div>
     </React.Fragment>
