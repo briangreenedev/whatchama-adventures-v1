@@ -133,7 +133,7 @@ const ComingSoonPage = () => {
         </div>
         <div id="sign" className={classes.logo}><SignLogo/></div>
         <div className={classes.phone}>
-          <a href="tel:4357907846"><Phone /> <span>(435) 790-6777</span></a>
+          <a href="tel:4357906777"><Phone /> <span>(435) 790-6777</span></a>
         </div>
       </div>
     </React.Fragment>
