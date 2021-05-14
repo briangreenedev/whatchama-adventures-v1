@@ -13,13 +13,4 @@ function Redirect ({to}) {
 
 export default function Home() {
   return <Redirect to="/coming-soon" />
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Whatchama Adventures Coming Soon!</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-    </div>
-  )
 }

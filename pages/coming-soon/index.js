@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react';
 import {makeStyles, useMediaQuery} from "@material-ui/core";
 import Phone from '@material-ui/icons/Call';
+import Head from "next/head";
 
 const useStyles = (maxWidth600) => makeStyles(theme => ({
   root: {
@@ -119,7 +120,19 @@ const ComingSoonPage = () => {
 
   return (
     <React.Fragment>
-      <div style={{ height: '100%', width: '100%', overflow: 'hidden'}} >
+      <Head>
+        <title>Whatchama Adventures | Coming Soon!</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png?v=1"/>
+        <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png?v=1"/>
+        <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png?v=1"/>
+        <link rel="manifest" href="/icons/site.webmanifest?v=1"/>
+        <link rel="mask-icon" href="/icons/safari-pinned-tab.svg?v=1" color="#a37c00"/>
+        <meta name="apple-mobile-web-app-title" content="Whatchama Adventures"/>
+        <meta name="application-name" content="Whatchama Adventures"/>
+        <meta name="msapplication-TileColor" content="#ffffff"/>
+        <meta name="theme-color" content="#ffffff"/>
+      </Head>
+      <div style={{height: '100%', width: '100%', overflow: 'hidden'}}>
         <div id="fullscreen" className={`${classes.root}`}>
           {/*<div>*/}
           {/*  <span>READY FOR AN ADVENTURE?</span>*/}
@@ -129,11 +142,11 @@ const ComingSoonPage = () => {
         </div>
         <div className={classes.mobileContainer}>
           <h1>Coming <span>Soon...</span></h1>
-          <div><Logo /></div>
+          <div><Logo/></div>
         </div>
         <div id="sign" className={classes.logo}><SignLogo/></div>
         <div className={classes.phone}>
-          <a href="tel:4357906777"><Phone /> <span>(435) 790-6777</span></a>
+          <a href="tel:4357906777"><Phone/> <span>(435) 790-6777</span></a>
         </div>
       </div>
     </React.Fragment>
