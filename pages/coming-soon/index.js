@@ -131,6 +131,9 @@ const ComingSoonPage = () => {
         <meta name="application-name" content="Whatchama Adventures"/>
         <meta name="msapplication-TileColor" content="#ffffff"/>
         <meta name="theme-color" content="#ffffff"/>
+        <link rel="preload" as="image" href="/img/large/Spirit-Lake-Summer.jpg"/>
+        <link rel="preload" as="image" href="/img/large/arch.jpg"/>
+        <link rel="preload" as="image" href="/img/large/camping-bg.jpg"/>
       </Head>
       <div style={{height: '100%', width: '100%', overflow: 'hidden'}}>
         <div id="fullscreen" className={`${classes.root}`}>
