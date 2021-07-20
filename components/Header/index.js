@@ -23,7 +23,15 @@ const useStyles = (marginBottom) => makeStyles(theme => ({
     fontWeight: '800',
     flexGrow: '3',
     textAlign: 'center',
-    fontSize: '2.1rem'
+    fontSize: '2.1rem',
+  },
+  [theme.breakpoints.down('md')]: {
+    title: {
+      fontSize: '1rem',
+    },
+    bucketListButton: {
+      display: 'none'
+    }
   },
   mainLogo: {
     paddingLeft: '10px',
@@ -35,8 +43,8 @@ const useStyles = (marginBottom) => makeStyles(theme => ({
     boxShadow: '0px 3px 5px 0px #757575',
     paddingTop: '7px',
     marginTop: '-14px'
-  }
-}))()
+  },
+}))();
 
 const Header = ({maxWidth, title, marginBottom = '100px'}) => {
   const classes = useStyles(marginBottom);
@@ -55,7 +63,7 @@ const Header = ({maxWidth, title, marginBottom = '100px'}) => {
             <Typography className={classes.title} variant="h1">
               { title || 'Adventures' }
             </Typography>
-            <Button color="inherit"><Badge badgeContent={4} color="secondary"><AdventureListIcon /></Badge></Button>
+            <Button className={classes.bucketListButton} color="inherit"><Badge badgeContent={4} color="secondary"><AdventureListIcon /></Badge></Button>
           </Toolbar>
         </Container>
       </AppBar>
