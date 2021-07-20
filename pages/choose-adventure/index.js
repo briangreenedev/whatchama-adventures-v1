@@ -44,7 +44,7 @@ const useStyles = makeStyles(() => ({
     marginRight: 'auto',
   },
   adventuresContainer: {
-    paddingTop: '30px',
+    paddingTop: '100px',
     paddingBottom: '30px'
   }
 }))
