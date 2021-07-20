@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import StepProgressSummary from "../../components/StepProgressSummary";
 import Header from "../../components/Header";
 import {Button, Container} from "@material-ui/core";
-import data from "./data";
+import data from "../../lib/data";
 import Choose from "../../components/Choose";
 import {makeStyles} from "@material-ui/styles";
 import CheckMark from '@material-ui/icons/Check';
